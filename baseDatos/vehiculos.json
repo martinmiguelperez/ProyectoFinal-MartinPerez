@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "nombre": "kymco Superdink",
+        "cilindrada": "125cc",
+        "images": "images/motos5.jpg",
+        "tipo": "Scooter",
+        "precio": 3050
+    },
+    {
+        "id": 2,
+        "nombre": "Askoll",
+        "cilindrada": "50cc",
+        "images": "images/motos1.jpg",
+        "tipo": "Scooter",
+        "precio": 2299
+    },
+    {
+        "id": 3,
+        "nombre": "BMW  R1200",
+        "cilindrada": "1200cc",
+        "images": "images/motos4.jpg",
+        "tipo": "Motocicleta",
+        "precio": 12599
+    },
+    {
+        "id": 4,
+        "nombre": "E-Bike Pro",
+        "cilindrada": "5cc",
+        "images": "images/bici1.jpg",
+        "tipo": "Bicicleta",
+        "precio": 820
+    },
+    {
+        "id": 5,
+        "nombre": "Niu NGT",
+        "cilindrada": "50cc",
+        "images": "images/motos6.jpg",
+        "tipo": "Scooter",
+        "precio": 2350
+    },
+    {
+        "id": 6,
+        "nombre": "Peugeot Tweet",
+        "cilindrada": "125CC",
+        "images": "images/motos8.jpg",
+        "tipo": "Scooter",
+        "precio": 1700
+    },
+    {
+        "id": 7,
+        "nombre": "Peugeot Tweet Pro",
+        "cilindrada": "50cc",
+        "images": "images/motos10.jpg",
+        "tipo": "Scooter",
+        "precio": 2550
+    },
+    {
+        "id": 8,
+        "nombre": "Super Soco CPX",
+        "cilindrada": "125cc",
+        "images": "images/motos11.jpg",
+        "tipo": "Scooter",
+        "precio": 1680
+    },
+    {
+        "id": 9,
+        "nombre": "Sym JoyMax",
+        "cilindrada": "300cc",
+        "images": "images/motos12.jpg",
+        "tipo": "Scooter",
+        "precio": 4399
+    },
+    {
+        "id": 10,
+        "nombre": "Yamaha Tricity",
+        "cilindrada": "125cc",
+        "images": "images/motos14.jpg",
+        "tipo": "Tricuclo",
+        "precio": 1650
+    },
+    {
+        "id": 11,
+        "nombre": "Yamaha Xmax",
+        "cilindrada": "125cc",
+        "images": "images/motos15.jpg",
+        "tipo": "Scooter",
+        "precio": 1599
+    },
+    {
+        "id": 12,
+        "nombre": "Zero S Zf",
+        "cilindrada": "125cc",
+        "images": "images/motos17.jpg",
+        "tipo": "Motocicleta",
+        "precio": 6150
+    }
+]

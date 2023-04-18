@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Martín Miguel Pérez" />
+    <meta name="copyright" content="Martín Miguel Pérez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”distribution” content=”global” />
+    <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
+    <title>Proyecto Final + Martin Perez</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="images/logo.png" width="112" height="28" title="Inicio">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        Home
+                    </a>
+                    <a class="navbar-item active" href="index.html">
+                        Tienda
+                    </a>
+                    <a class="navbar-item" href="#">
+                        Contacto
+                    </a>
+                </div>
+                <div class="navbar-st">
+                    <a href="carrito.html">
+                        <figure class="">
+                            <img class="imgComprar" src="images/botonCompra2.png" alt="Comprar ahora" title="Carrito"
+                                id="imgCarritoCooltra">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedorCarrito">
+        <div class="tablaCompra">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="tablehead">Nombre</th>
+                        <th id="tablehead">Cantidad</th>
+                        <th id="tablehead">Precio unitario</th>
+                        <th id="tablehead">Subtotal</th>
+                        <th id="tablehead">Quitar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="formularioDatos">
+            <img src="images/portada1.png" alt="Imagen repartidor">
+        </div>
+
+        <aside class="formularioDireccion">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quibusdam expedita? Repudiandae aperiam
+                exercitationem quae officiis in distinctio reprehenderit voluptatibus iure eligendi, nulla mollitia quis
+                earum, deserunt similique. Cumque ex, accusamus quos assumenda voluptas ipsum laborum saepe voluptatibus
+                illum sed ullam velit repellendus, odio, recusandae sequi delectus eos fuga pariatur.</p>
+        </aside>
+
+        <div class="botonCompra">
+            <button class="button is-danger is-outlined ConfigBotonComprar" id="vaciarCarrito">VACIAR</button>
+            <button class="button is-info is-outlined ConfigBotonComprar" id="confirmarCompra">COMPRAR</button>
+            <button class="button is-success is-outlined ConfigBotonComprar ConfigBotonVolver" id="volverCarrito"><a
+                    href="index.html">VOLVER A TIENDA</a></button>
+        </div>
+
+        <div class="totalCarrito">
+            <h4 class="TotalCarrito" id="total"></h4>
+        </div>
+    </main>
+
+    <footer class="Footer">
+        <div>
+            <h5>Estudiante: Martín Miguel Pérez</h5>
+            <h6>Comisión JavaScript: 39455</h6>
+        </div>
+        <div class="FondoCopy">
+            &copy; Copyright 2023 | Todos los derechos reservados.
+        </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

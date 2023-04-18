@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css');
+
+/* ======GENERAL====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ======NAVBAR====== */
+header {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.navbar-item.active {
+  text-decoration: underline rgb(163, 161, 161);
+}
+
+/* ======FOOTER====== */
+.Footer {
+  text-align: center;
+  background-color: #363636;
+  color: rgb(216, 211, 211);
+  box-shadow: 0px 2px 10px 5px #727171;
+}
+
+.FondoCopy {
+  background-color: rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 2px 10px 5px #383838;
+}
+
+/* ======BODY====== */
+body {
+  background-image: radial-gradient(circle, #fcfcfc, #ffffff);
+  color: #000;
+}
+
+main {
+  font-family: 'Roboto Slab', serif;
+}
+
+
+/* ======MAIN INDEX====== */
+.contenedor {
+  width: 90%;
+  max-width: 95%;
+  margin: 80px auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "filtros filtros filtros"
+    "contenido contenido contenido"
+    "contenido contenido contenido"
+    "widget-1 widget-2 widget-3";
+}
+
+.contenedor>div,
+.contenedor .filtros,
+.contenedor .contenido {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.contenedor .filtros {
+  background: #005499;
+  color: #fff;
+  grid-area: filtros;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contenedor .filtros .filtrosInput {
+  width: 80%;
+  min-width: 20px;
+  margin-bottom: 10px;
+
+}
+
+.contenedor .filtros .filtrosButton {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+div.filtrosButton button {
+  width: 150px;
+  margin: 5px;
+}
+
+
+.contenedor .contenido {
+  grid-area: contenido;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2,
+.contenedor .widget-3 {
+  background: #363636;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor .widget-1 {
+  grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+  grid-area: widget-2;
+  background: none;
+}
+
+.contenedor .widget-3 {
+  grid-area: widget-3;
+}
+
+.cardError {
+  font-size: 15px;
+  margin: 150px auto;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0px 1px 20px rgba(255, 0, 0, 0.147);
+  border: 1px solid rgba(139, 0, 0, 0.218);
+  border-radius: 10px;
+  padding: 20px 80px;
+  color: red;
+}
+
+/* ======MAIN CARRITO====== */
+.contenedorCarrito {
+  width: 90%;
+  max-width: 95%;
+  margin: 80px auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "tablaCompra tablaCompra"
+    "formularioDatos totalCarrito"
+    "formularioDatos botonCompra"
+    "formularioDatos formularioDireccion";
+}
+
+totalCarrito .contenedorCarrito>div,
+.contenedorCarrito .tablaCompra,
+.contenedorCarrito .formularioDatos,
+.contenedorCarrito .formularioDireccion,
+.contenedorCarrito .botonCompra,
+.contenedorCarrito .totalCarrito {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.contenedorCarrito .tablaCompra {
+  color: #2c2b2b;
+  font-weight: 500;
+  grid-area: tablaCompra;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorCarrito .totalCarrito {
+  background-color: #0088ff11;
+  grid-area: totalCarrito;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorCarrito .formularioDatos {
+  background: #dcdde11d;
+  grid-area: formularioDatos;
+  gap: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.contenedorCarrito .formularioDireccion {
+  background: #dcdde11d;
+  color: #000000;
+  grid-area: formularioDireccion;
+  gap: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.field {
+  width: 90%;
+  margin: 1px;
+}
+
+.control {
+  padding: 7px;
+}
+
+a figure img.imgComprar {
+  margin: 5px 15px 5px 0px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a figure img.imgComprar:hover {
+  background-color: #afa9a9;
+  border-radius: 10px;
+}
+
+
+
+.contenedorCarrito .botonCompra {
+  color: #fff;
+  grid-area: botonCompra;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ConfigBotonComprar {
+  width: 50%;
+  margin: 10px;
+}
+
+.ConfigBotonVolver a {
+  color: rgb(17, 147, 17);
+}
+
+/* ======TABLA====== */
+
+table {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+thead tr {
+  background-color: #0088ff;
+}
+
+tbody tr td {
+  font-size: 1.1rem;
+}
+
+#tablehead {
+  padding: 15px;
+}
+
+tbody tr:nth-child(even) {
+  background: #0710181c !important;
+
+}
+
+.button-delete {
+  font-size: small;
+  border-radius: 1px;
+  border: solid 0.5px rgb(81, 79, 79);
+}
+
+.button-delete:hover {
+  background-color: rgba(255, 100, 100, 0.674) !important;
+}
+
+/* ======CARD====== */
+.tarjeta {
+  max-width: 65vw;
+  text-align: center;
+  height: auto;
+  margin: 25px auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+
+}
+
+.tarjeta:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.209);
+  transform: translateY(-0.1);
+}
+
+.contenidosCard {
+  display: flex;
+}
+
+.ladoIzq,
+.ladoDer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.ladoDer img {
+  border-style: none;
+}
+
+.ladoIzq {
+  background: black;
+  color: white;
+  padding: 48px;
+  margin: auto;
+}
+
+.cuerpo p {
+  color: rgb(248, 248, 248);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1rem;
+}
+
+h1.tituloCard {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2rem;
+  color: #0086FF;
+  text-shadow: 0 1px #011c34, 1.1px 0 #034580;
+}
+
+h1.tituloTotal {
+  margin-top: 2rem;
+  margin-bottom: 1em;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2rem;
+  color: #0086FF;
+  text-shadow: 0 1px #010e1a, 1.1px 0 #022849;
+}
+
+h2.tituloPrecio {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2rem;
+  color: #ff2f00;
+  text-shadow: 0 1px #010e1a, 1.1px 0 #022849;
+}
+
+h4.TotalCarrito {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #0086FF;
+  text-shadow: 0 1px #010e1a, 1.1px 0 #929598;
+}
+
+.btnCardComprar {
+  display: inline-block;
+  background: #008AFF;
+  margin: auto;
+  padding: 14px 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+button.btn.btnCardComprar {
+  text-decoration: none;
+}
+
+button.btn.btnCardComprar:first-of-type {
+  background: #008AFF;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  line-height: 1rem;
+}
+
+button.btn.btnCardComprar:hover {
+  background: #156bb7;
+  color: rgb(1, 1, 1);
+}
+
+/* ======MEDIA====== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "filtros filtros"
+      "contenido contenido"
+      "contenido contenido"
+      "widget-2 widget-2"
+      "widget-1 widget-3";
+  }
+
+  div.filtrosButton button {
+    width: 150px;
+    margin: 5px;
+  }
+
+  .contenedorCarrito {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "tablaCompra tablaCompra"
+      "totalCarrito totalCarrito"
+      "botonCompra botonCompra"
+      "formularioDatos formularioDireccion"
+      "formularioDatos formularioDireccion";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "filtros"
+      "contenido"
+      "contenido"
+      "widget-1"
+      "widget-2"
+      "widget-3";
+  }
+
+  div.filtrosButton button {
+    width: 90%;
+    min-width: 10%;
+    margin: 5px;
+  }
+
+  .contenedorCarrito {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "tablaCompra"
+      "totalCarrito"
+      "botonCompra"
+      "formularioDatos"
+      "formularioDireccion";
+  }
+
+  table thead tr th {
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+  table tbody tr td {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contenidosCard {
+    flex-direction: column;
+  }
+
+  .tarjeta {
+    max-width: 95vw;
+  }
+}
